@@ -1,2 +1,0 @@
-# graphpaper
-Graphpaper in PostScript
