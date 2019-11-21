@@ -1,11 +1,9 @@
 %!PS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% graphpaper.ps $Revision: 1.1 $ : Prints out variable sized graph paper.
-% Release $Name:  $ (Only defined if checked out as a specific release)
+% graphpaper.ps : Prints out variable sized graph paper.
 %
-% by Daniel C. Nygren $Date: 2009/09/17 15:48:12 $
+% by Daniel C. Nygren
 % E-mail: dan.nygren@gmail.com
-% Permanent E-mail: Dan.Nygren@alumni.clemson.edu
 %
 % Copyright 2009 by Daniel C. Nygren
 %
@@ -50,30 +48,26 @@
 %                       (N. Describe anything a maintainer should be aware of)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%               REVISIONS
-%
-% $Log: graphpaper.ps,v $
-% Revision 1.1  2009/09/17 15:48:12  nygren
-% Initial revision
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % --- Defines ---
 
 % By convention, all my variables have a underscore in them, and my
 % procedures start with a capital letter. (Except for the ubiquitous "inch")
 
+/#copies 1 def              % Enter number of copies to print out
+
 %If you have a duplex printer, you have the option of printing on both sides
 /paper_sides {2} def        % Enter 1 to print squares on one side,
                             % 2 for both sides.
 
-/line_darkness {0.2} def    % Play with this to change setgray darkness of lines
+/line_darkness {0.3} def    % Play with this to change setgray darkness of lines
                             % (0 = black)
-/line_width {0.1} def       % Play with this to change setlinewidth thickness
+/line_width {0.2} def       % Play with this to change setlinewidth thickness
                             % (0 = thinnest possible)
 
-/side_size {0.03937} def    % Enter length of a square side in inches
+% /side_size {0.03937} def    % 1 mm % Enter length of a square side in inches
+/side_size {0.19685} def    % 0.5 cm % Enter length of a square side in inches
+% /side_size {0.3937} def     % 1 cm % Enter length of a square side in inches
 /paper_width {8.5} def      % Enter paper width in inches
 /paper_height {11} def      % Enter paper height in inches
 /paper_margin {0.75} def    % Enter paper margin in inches
